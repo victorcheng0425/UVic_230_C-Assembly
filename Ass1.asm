@@ -1,7 +1,7 @@
 ;
 ; CSC 230: Assignment 1
 ;  
-; YOUR NAME GOES HERE: Victor Cheng V00815317
+; YOUR NAME GOES HERE: Victor Cheng 
 ;	Date: 9/20/2019
 ;
 ; This program generates each number in the Collatz sequence and stops at 1. 
