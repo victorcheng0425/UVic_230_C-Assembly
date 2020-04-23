@@ -1,0 +1,49 @@
+;
+; lab3.asm
+;
+; Created: 9/24/2019 2:30:11 PM
+; Author : victorcheng0425
+;
+
+
+; Replace with your application code
+
+
+.cseg
+    ldi r16, 0xFF
+	sts DDRL, r16
+	out DDRB, r16
+
+
+
+	ldi r16, 0b00100010
+	ldi r17, 0b00000010
+
+initalize:
+    sts PORTL, r16
+	out PORTB, r17
+	ldi r19, 0xFF
+	ldi r20, 0xFF
+	ldi r21, 0xFF
+	ldi r22, 0x0F
+	
+loop:
+	nop
+	nop
+	nop
+	nop
+	nop
+	nop
+	DEC r20
+	BRNE loop
+	DEC r21
+	BRNE loop
+	DEC r22
+	BRNE loop
+
+	eor r16, r19
+	eor r17, r19
+	rjmp initalize
+
+
+done:rjmp done

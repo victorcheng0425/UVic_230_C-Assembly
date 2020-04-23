@@ -1,0 +1,44 @@
+CSC 230 Lab1
+Student Number: V00815317	
+Name: Victor Cheng
+
+3.There are 194 students registered in CSc 230, what is the minimum number of bits needed to represent this number in binary (assume it is an unsigned number)?
+Answer: 8 bits
+
+
+4.Convert the following numbers:
+  a.	0b1001101 (unsigned) to decimal
+Answer: 77
+  
+  
+  b.	63 to binary and hexadecimal
+
+Answer: 0b111111 0x3F
+
+5.Convert the following numbers:
+  a. -63 to binary (using 2’s complement notation) and then to Hex 
+  
+Answer: 0b1000001 0xC1
+  b. 0b101011 (2’s complement) to decimal
+
+Answer: -21
+  
+  c. 0b001110 (2’s complement) to decimal
+
+Answer: 14
+
+
+6.	What are the minimum and maximum values (in decimal) represented by a 4-bit binary number: a) as an unsigned number? b) as a signed number? How about 8 bits, 16 bits, k bits?
+
+Answer: 
+               unsigned min                unsigned max               signed min            signed max
+4bits              0                            15                        -8                     7
+8bits              0                            255                       -128                  127
+16bits             0                            65535                     -32768                32767
+kbits              0                           2^k - 1                    -2^(k-1)              2^(k-1)-1
+
+
+9.What is the mask to be used if we want to clear bits 2,3,5 and 7 of a byte?
+   Assume      : 0b11111111
+And Mask/Answer: 0b01010011
+   Clear       : 0b01010011    
